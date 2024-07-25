@@ -6,10 +6,6 @@ function Features() {
                 <div className="row justify-content-center align-items-center text-center">
                     <div className="col-md-8">
                         <h2 className="mb-3">Features</h2>
-                        <p className="text-muted mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor
-                            sit amet, consectetur adipiscing elit
-                        </p>
                     </div>
                 </div>
                 <div className="row justify-content-center  text-center">
