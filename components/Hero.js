@@ -31,10 +31,7 @@ function Hero() {
                             your customers.
                         </h5>
                         <div className=" mb-0">
-                            <a
-                                href="https://themeforest.net/item/clab-multipurpose-html5-template/23489597?ref=vectorlab"
-                                className="cta-button "
-                            >
+                            <a href="#contact-now" className="cta-button ">
                                 Schedule a Free Consultation
                             </a>
                         </div>
