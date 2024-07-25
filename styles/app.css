@@ -1,0 +1,236 @@
+/* App.css */
+:root {
+  --primary-color: #E52A2A;
+  --text-color: #4f5e6b;
+  --background-color: #ffffff;
+  --secondary-background: #f8f8f8;
+  --heading-color: #1a1a1a;
+  --padding: 20px;
+  --margin: 20px;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: 16px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  padding: var(--padding) 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: padding var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: color var(--transition-speed) ease;
+}
+
+.logo-img {
+  max-width: 150px;
+  height: auto;
+  transition: transform var(--transition-speed) ease;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  transition: transform var(--transition-speed) ease;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+  white-space: nowrap;
+}
+
+.cta-button:hover {
+  background-color: #d12323;
+  transform: scale(1.05);
+}
+
+main {
+  max-width: 1200px;
+  margin: var(--margin) auto;
+  padding: calc(var(--padding) * 2) 5%;
+  transition: padding var(--transition-speed) ease;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--margin);
+}
+
+section {
+  padding: var(--padding);
+  background-color: var(--secondary-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: padding var(--transition-speed) ease, background-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: var(--margin);
+}
+
+.hero h1 {
+  color: var(--heading-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.hero .cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+  white-space: nowrap;
+}
+
+.hero .cta-button:hover {
+  background-color: #d12323;
+  transform: scale(1.05);
+}
+
+.hero-video video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--margin);
+  text-align: center;
+}
+
+.features .feature {
+  padding: var(--padding);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.features .feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.features .feature img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.features .feature h3 {
+  color: var(--heading-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-now form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-now label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-now input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-now button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.contact-now button:hover {
+  background-color: #d12323;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: var(--secondary-background);
+  padding: var(--padding) 5%;
+  text-align: center;
+}
+
+footer nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color var(--transition-speed) ease;
+}
+
+footer nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
