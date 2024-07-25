@@ -13,9 +13,9 @@ function WhatIsGOTSKILL() {
                                     <div className="col-md-15">
                                         <h4 className="mb-4">What Is GOTSKILL?</h4>
                                         <p className=" mb-4">
-                                            Our skill games challenge players' hand-eye coordination and timing in over
+                                            {`Our skill games challenge players' hand-eye coordination and timing in over
                                             38 games. People find them fun because the games are engaging, and their
-                                            skills are tested.
+                                            skills are tested.`}
                                         </p>
                                     </div>
                                 </div>

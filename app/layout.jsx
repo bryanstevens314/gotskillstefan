@@ -5,6 +5,7 @@ import '../public/assets/css/app.css';
 import '../public/assets/css/custom.css';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
+import Script from 'next/script';
 
 export default function RootLayout({ children }) {
     return (
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
                 {children}
 
                 <Footer />
-                <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+                <Script defer src="/assets/vendor/bootstrap/js/bootstrap.min.js" />
             </body>
         </html>
     );
