@@ -2,45 +2,45 @@ import React from 'react';
 
 function ContactNow() {
     return (
-        <section id="contact-now" class="component-section bg-white">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
+        <section id="contact-now" className="component-section bg-white">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-md-6">
                         <form>
-                            <div class="form-group">
+                            <div className="form-group">
                                 <label>First Name</label>
                                 <input
                                     type="text"
-                                    class="form-control"
+                                    className="form-control"
                                     placeholder="First Name"
                                     id="firstName"
                                     name="firstName"
                                     required
                                 />
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                                 <label>Last Name</label>
                                 <input
                                     type="text"
-                                    class="form-control"
+                                    className="form-control"
                                     placeholder="First Name"
                                     id="lastName"
                                     name="lastName"
                                     required
                                 />
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                                 <label>Email</label>
                                 <input
                                     type="email"
-                                    class="form-control"
+                                    className="form-control"
                                     placeholder="Email"
                                     id="email"
                                     name="email"
                                     required
                                 />
                             </div>
-                            <button type="submit" class="cta-button">
+                            <button type="submit" className="cta-button">
                                 Submit
                             </button>
                         </form>
