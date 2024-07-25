@@ -1,22 +1,26 @@
-'use client';
-import '../styles/globals.css';
-import '../styles/app.css';
-import Script from 'next/script';
+import '../public/assets/vendor/vl-nav/css/core-menu.css';
+import '../public/assets/vendor/bootstrap/css/bootstrap.min.css';
+import '../public/assets/css/globals.css';
+import '../public/assets/css/app.css';
+import '../public/assets/css/custom.css';
+import Footer from 'components/Footer';
+import Header from 'components/Header';
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en" data-theme="lofi">
             <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
+                <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet" />
             </head>
-            <body className="antialiased text-white bg-blue-900">
-                <div className="flex flex-col min-h-screen px-6 bg-grid-pattern sm:px-12">
-                    <div className="flex flex-col w-full max-w-5xl mx-auto grow">
-                        <div className="grow">{children}</div>
-                    </div>
-                </div>
+            <body>
+                <Header />
+                {children}
+
+                <Footer />
+                <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
             </body>
-            <Script src="/assets/js/observer.js" />
         </html>
     );
 }
